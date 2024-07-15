@@ -301,20 +301,22 @@ body {
   justify-content: center;  
 }
 
-.tanyakuark .kuark h1 {
+.tanyakuark .kuark h2 {
   text-align: center;
-  /* padding-bottom: 0.8rem; */
+  padding-bottom: 1rem; 
 }
 
-.tanyakuark .kuark h1 span {
+.tanyakuark .kuark h2 span {
   color: greenyellow;
 }
 
 .tanyakuark .kuark p {
-  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   color: #fff;
   font-size: 1.5rem;
-  width: 70rem;
+  width: 100%;
 }
 
 /* Media Queries */
