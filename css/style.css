@@ -311,9 +311,7 @@ body {
 }
 
 .tanyakuark .textkuark p {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  text-align: center;
   color: #fff;
   font-size: 1.5rem;
   width: 100%;
