@@ -1,0 +1,402 @@
+:root {
+  --primary: rgb(67, 208, 39);
+  --bg: #010101;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bg);
+  color: #fff;
+  /*  min-height: 2000px; */
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 7%;
+  background: linear-gradient(
+    86deg,
+    rgba(16, 59, 6, 1) 0%,
+    rgba(51, 113, 41, 1) 0%,
+    rgba(22, 47, 26, 1) 81%
+  );
+  border-bottom: 1px solid #175a16;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.navbar .navbar-logo {
+  font-size: 2rem;
+  font-weight: 700;
+  font-style: italic;
+  color: #fff;
+}
+
+.navbar .navbar-logo span {
+  color: var(--primary);
+}
+
+.navbar .navbar-nav a {
+  color: #fff;
+  display: inline-block;
+  font-size: 1.3rem;
+  margin: 0 1rem;
+}
+
+.navbar .navbar-nav a:hover {
+  color: var(--primary);
+}
+
+.navbar .navbar-nav a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid var(--primary);
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+  transform: scaleX(0.5);
+}
+
+.navbar .navbar-extra a {
+  color: #fff;
+  margin: 0 0.5rem;
+}
+
+.navbar .navbar-extra a:hover {
+  color: var(--primary);
+}
+
+#hamburger-menu {
+  display: none;
+}
+
+/* About Section */
+
+.about {
+  background: linear-gradient(
+    166deg,
+    rgba(16, 59, 6, 1) 0%,
+    rgba(63, 138, 51, 1) 0%,
+    rgba(22, 47, 26, 1) 81%
+  );
+  padding: 7rem 7% 1.4rem; /* atas kiri kanan bawah */
+}
+
+.about h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+
+.about h2 span {
+  color: var(--primary);
+}
+
+.about .row {
+  display: flex;
+}
+
+.about .row .about-img {
+  flex: 1 1 55rem;
+}
+
+.about .row .about-img img {
+  width: 100%;
+}
+
+.about .row .content {
+  flex: 1 1 45rem;
+  padding: 3rem 1rem;
+}
+
+.about .row .content h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.about .row .content h3 span {
+  color: var(--primary);
+}
+
+.about .row .content p {
+  margin-bottom: 0.8rem;
+  font-size: 1.4rem;
+  font-weight: 200;
+  line-height: 1.8rem;
+}
+
+.about .row .content p span {
+  color: var(--primary);
+}
+
+.about .row .content .cta {
+  margin-top: 3rem;
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 1.4rem;
+  color: #fff;
+  background-color: #154e04;
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 3px rgba(1, 2, 3, 0.5);
+}
+
+.about .row .content a:hover {
+  color: var(--primary);
+}
+
+/* Eksperimen */
+.eksperimen {
+  background: linear-gradient(
+    166deg,
+    rgba(16, 59, 6, 1) 0%,
+    rgba(63, 138, 51, 1) 0%,
+    rgba(22, 47, 26, 1) 81%
+  );
+  padding: 7rem 3% 1.4rem; /* atas kiri kanan bawah */
+  min-height: 100vh;
+}
+
+.eksperimen .row {
+  display: flex;
+  flex: wrap;
+}
+
+.eksperimen .row .gambar {
+  width: 60%;
+  margin-left: 5rem;
+  padding-top: 3rem;
+}
+
+.eksperimen .row .gambar img {
+  width: 40rem;
+  flex: 1 1 35rem;
+}
+
+.eksperimen .row .pilih {
+  /* flex: 1 1 35rem; */
+  padding: 0 1rem;
+  width: 40%;
+}
+
+.eksperimen .row .pilih h2 {
+  color: var(--primary);
+  text-align: center;
+  font-size: 1.2rem;
+  font-style: italic;
+  padding: 1rem 1rem;
+}
+
+.eksperimen .row .pilih h2 span {
+  color: greenyellow;
+  font-size: 1.5rem;
+  font-style: normal;
+  padding-left: 0.5rem;
+}
+
+.eksperimen .row .pilih .ortu {
+  padding: 0.6rem 0.5rem;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  border-radius: 0.6rem;
+  background-color: rgb(209, 43, 43);
+  width: 15rem;
+  font-size: 0.9rem;
+}
+
+.eksperimen .row .pilih .ortu .bo {
+  padding: 0.3rem 0.3rem;
+  border-radius: 0.5rem;
+  color: black;
+  background-color: yellow;
+  font-weight: 800;
+}
+
+.eksperimen .row .pilih .ortu .teks_bo {
+  color: #fff;
+  font-weight: 800;
+}
+
+.eksperimen .row .pilih .thumb {
+  display: flex;
+  /*  flex-wrap: wrap; */
+  list-style: none;
+}
+
+.eksperimen .row .pilih img {
+  width: 10rem;
+}
+
+#thumb {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+  justify-content: space-evenly;
+}
+
+.thumb li {
+  cursor: pointer;
+  /*  margin-right: 1rem; */
+}
+
+.eksperimen .row .gambar img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.eksperimen .row .gambar p {
+  font-size: 1.3rem;
+  font-weight: 600;
+  font-style: italic;
+  color: rgb(103, 207, 42);
+}
+
+.eksperimen .row .gambar p span {
+  color: rgb(251, 53, 178);
+  font-size: 2rem;
+  font-weight: 800;
+  font-style: normal;
+}
+
+/* Video */
+#displayVideo {
+  width: 100%;
+  max-width: 400px; /* Atur max-width sesuai kebutuhan */
+  height: auto;
+}
+
+/* Tanyakuark Section */
+
+.tanyakuark {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  width: auto;
+  background-image: url("../img/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.tanyakuark .kuark {
+  padding: 8rem 8rem;
+}
+
+.tanyakuark .kuark h1 {
+  text-align: center;
+  padding-bottom: 0.8rem;
+}
+
+.tanyakuark .kuark h1 span {
+  color: greenyellow;
+}
+
+.tanyakuark .kuark p {
+  text-align: center;
+  color: #fff;
+  font-size: 1.5rem;
+  width: 70rem;
+}
+
+/* Media Queries */
+/* Laptop */
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+    background-color: rgb(153, 105, 105);
+  }
+}
+
+@media (max-width: 828px) {
+  .eksperimen .row .pilih img {
+    width: 8rem;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+    background-color: rgb(175, 154, 38);
+  }
+
+  #hamburger-menu {
+    display: inline-block;
+  }
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: #fff;
+    width: 20rem;
+    height: 100vh;
+    transition: 0.3s;
+  }
+
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+
+  .navbar .navbar-nav a {
+    color: var(--bg);
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
+
+  .navbar .navbar-nav a::after {
+    transform-origin: 0 0;
+  }
+
+  .navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.2);
+  }
+  .about .row {
+    flex-wrap: wrap;
+  }
+
+  .about .row .about-img img {
+    height: 24rem;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .eksperimen .row .gambar {
+    padding-top: 10rem;
+  }
+
+  .eksperimen .row .pilih img {
+    width: 7rem;
+  }
+}
+
+/* Handphone */
+@media (max-width: 560px) {
+  html {
+    font-size: 55%;
+    background-color: rgb(71, 151, 151);
+  }
+
+  .eksperimen .row .gambar {
+    padding-top: 13rem;
+  }
+}

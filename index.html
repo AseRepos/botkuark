@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChatBot Kuark</title>
+
+    <!--    Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Feather-Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar Start -->
+    <nav class="navbar">
+      <!-- <a href="#" class="navbar-logo">ChatBot <span>KUARK</span>.</a> -->
+      <a href="https://osk.web.id">
+        <img src="img/logo_osk.png" alt="logo_osk"
+      /></a>
+
+      <div class="navbar-nav">
+        <a href="#about">Cover</a>
+        <a href="#eksperimen">Eksperimen</a>
+        <a href="chatbot.html">Tanya Kuark</a>
+      </div>
+
+      <div class="navbar-extra">
+        <!--        <a href="#" id="search"><i data-feather="search"></i></a>
+        <a href="#" id="shopping-cart"><i data-feather="shopping-cart"></i></a>-->
+        <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+      </div>
+    </nav>
+    <!-- Navnbar End -->
+
+    <!-- section about start -->
+    <section id="about" class="about">
+      <div class="row">
+        <div class="about-img">
+          <img src="img\cover3.png" alt="cover" />
+        </div>
+
+        <div class="content">
+          <h3>Sahabat <span>KUARK</span> Yuk, ikuti</h3>
+          <h3>eksperimen <span>Lampu Lava Sederhana</span></h3>
+
+          <p>
+            Didalam <span>KUARK Tahun XV Edisi 03 Level-2</span> terdapat banyak
+            hal yang menarik. Ada Mengungkap pesan rahasia yang misterius,
+            Kucing berbulu atau berambut?, Merombak dan Membangun Bumi,
+            Eksperimen Lampu Lava Sederhana, dan banyak lagi.
+          </p>
+
+          <a href="#eksperimen" class="cta">EKSPERIMEN LAMPU LAVA SEDERHANA</a>
+        </div>
+      </div>
+    </section>
+    <!-- section about end -->
+
+    <!-- section Eksperimen start -->
+
+    <section class="eksperimen" id="eksperimen">
+      <div class="row">
+        <div class="pilih">
+          <div class="ortu">
+            <span class="bo">BO</span>
+            <span class="teks_bo">BIMBINGAN ORANG TUA</span>
+          </div>
+          <h2>Eksperimen <br /><span>Lampu Lava Sederhana</span></h2>
+
+          <ul class="thumb" id="thumb">
+            <li><img src="img/thumb1.jpg" /></li>
+            <li><img src="img/thumb2.jpg" /></li>
+            <li><img src="img/thumb3.jpg" /></li>
+            <li><img src="img/thumb_video.jpg" /></li>
+          </ul>
+        </div>
+
+        <div class="gambar" id="getgambar">
+          <img id="displayImage" src="img/eksperimen1.jpg" />
+          <video
+            id="displayVideo"
+            controls
+            style="display: none; padding-top: 1.5rem; object-fit: cover"
+          >
+            <source src="img/Video_lampulava.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+
+          <div id="displayInfo" style="display: none">
+            <p>
+              <span>BAGAIMANA JIKA.......... ?</span>
+            </p>
+            <p>--- cuka diganti dengan sirup...?</p>
+            <p>--- soda kue diganti dengan garam...?</p>
+            <p>Bagaimana supaya hasil percobaan lebih menarik...?</p>
+
+            <h2>
+              Kumpulkan pertanyaaan menarik lainnya, dan tanyakan langsung ke
+              KUARK melalui chatbot dengan meng-<span style="color: greenyellow"
+                >klik</span
+              >
+              menu <span style="color: greenyellow">Tanya Kuark</span> bagian
+              atas...
+            </h2>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section Eksperimen End -->
+
+    <!-- Feather icons -->
+    <script>
+      feather.replace();
+    </script>
+
+    <!-- My Javascript -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
