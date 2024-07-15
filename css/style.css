@@ -319,6 +319,10 @@ body {
   width: 100%;
 }
 
+.tanyakuark .textkuark p span {
+  color: greenyellow;
+}
+
 /* Media Queries */
 /* Laptop */
 @media (max-width: 1366px) {
