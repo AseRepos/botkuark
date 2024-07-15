@@ -310,7 +310,7 @@ body {
   color: greenyellow;
 }
 
-.tanyakuark .kuark p {
+.tanyakuark .textkuark p {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
