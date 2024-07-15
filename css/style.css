@@ -289,13 +289,13 @@ body {
                               rgba(16,59,6,1) 0%,
                               rgba(63,138,51,1) 0%,
                               rgba(22,47,26,1) 81% );
-  padding: 9rem 3% 1.4rem; /* atas kiri kanan bawah */
+  padding: 7rem 3% 1.4rem; /* atas kiri kanan bawah */
   min-height: 100vh;
   position: relative;
 }
 
 .tanyakuark .kuark {
-/*  padding: 8rem 8rem; */
+  padding-top: 8rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;  
